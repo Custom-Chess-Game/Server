@@ -1,4 +1,6 @@
-package com.github.smuddgge.configuration;
+package com.github.smuddgge;
+
+import com.github.smuddgge.configuration.YamlConfiguration;
 
 public class Config extends YamlConfiguration {
 

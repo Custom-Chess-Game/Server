@@ -1,6 +1,6 @@
 package com.github.smuddgge;
 
-import com.github.smuddgge.configuration.Config;
+import com.github.smuddgge.server.Server;
 
 import java.io.IOException;
 
@@ -15,9 +15,12 @@ public class Main {
      */
     public static void main(String[] args) throws IOException {
 
+        // Create a config instance
         Config config = new Config();
 
-        new Server(config.getPort());
-
+        // Start the new server
+        Server server = new Server(config.getPort());
+        server.setDebugMode(true);
+        server.run();
     }
 }
