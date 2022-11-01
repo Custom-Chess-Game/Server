@@ -2,6 +2,9 @@ package com.github.smuddgge;
 
 import com.github.smuddgge.configuration.YamlConfiguration;
 
+/**
+ * Represents the servers config
+ */
 public class Config extends YamlConfiguration {
 
     /**
@@ -15,6 +18,7 @@ public class Config extends YamlConfiguration {
 
     /**
      * Used to get the port from the config
+     *
      * @return The server port
      */
     public Integer getPort() {
